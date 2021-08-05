@@ -1,0 +1,24 @@
+#########################
+### Workflow options ####
+#########################
+
+## List of piared end sample names
+Samples:
+ - UV1short
+ - UV2short
+
+Reads_path:
+ - 00_reads
+
+# Choose which reference you want to use by removing the "#" in front of WAI332 or IPO323. The pipeline will not tolerate both references un-commented. You must choose one and only one!
+Reference:
+# - WAI332
+  - IPO323
+
+
+###########################
+### GATK Filter settings ##
+###########################
+
+#Gatk_filters:
+# - ""filter": "QUAL <30 || QD < 5.0 || FS > 0.5 || SOR > 2.5 || MQRankSum < -2.5 || ReadPosRankSum < -2.3 || ReadPosRankSum > 2.3""
